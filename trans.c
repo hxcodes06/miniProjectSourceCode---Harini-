@@ -81,7 +81,7 @@ void textFile(FILE *readPtr)
         fprintf(writePtr, "%-6s%-16s%-11s%10s\n", "Acct", "Last Name", "First Name", "Balance");
 
         // copy all records from random-access file into text file
-        while (!feof(readPtr))
+        while ((result = fread(&client, sizeof(struct clientData), 1, readPtr)) == 1)
         {
             result = fread(&client, sizeof(struct clientData), 1, readPtr);
 
@@ -131,7 +131,7 @@ void updateRecord(FILE *fPtr)
 
         // move file pointer to correct record in file
         // move back by 1 record length
-       fseek(fPtr, -sizeof(struct clientData), SEEK_CUR);
+        fseek(fPtr, -sizeof(struct clientData), SEEK_CUR);
         // write updated record over old record in file
         fwrite(&client, sizeof(struct clientData), 1, fPtr);
     } // end else
