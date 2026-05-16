@@ -1,7 +1,11 @@
-Acct  Last Name       First Name    Balance
-1     John            Joe           1222.00
-147563                                -0.97
-54594749                                 0.00
-1086177263                                 0.00
--1111494912k@                               0.00
-134217728�@                             0.00
+Acct   Last Name       First Name      Balance
+1      Kumar           Harini          5000.00
+2      Sharma          Rahul           3200.50
+3      Patel           Priya           8750.75
+4      Reddy           Arjun           1500.00
+5      sia             kuna            1800.00
+7      Nair            Kavya           2100.80
+8      Mehta           Rohit           6700.60
+9      Iyer            Divya           3890.40
+10     Verma           Karan           7400.00
+666
